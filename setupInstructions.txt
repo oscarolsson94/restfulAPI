@@ -1,0 +1,11 @@
+npm init -y
+npm install express mongoose // express for server and mongoose to interact with mongoDB
+npm install --save-dev dotenv nodemon //dev dependencies to hide DB connection info and auto update on code change
+
+replace "script" in package.json with "devStart": "nodemon server.js"
+
+make a .gitignore file and enter: node_modules
+                                  .env
+
+                                  
+To run the server: npm run devStart                                  
